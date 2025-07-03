@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- App Name-->
+    <!-- Linking the font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Linking the CSS File -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Creating the Searchbox and search button -->
+    <div class="container">
+      <div class="search-city">
+        <input
+          type="text"
+          placeholder="Search City or ZIP Code"
+          class="input"
+        />
+        <button class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <!-- Blank Box image if there is no city name -->
+      <div class="blank">
+        <h1>search 'city' name</h1>
+        <img src="search-city.png" alt="" />
+      </div>
+      <!-- Wrong City name or unavailable city (in case of 404 Error from openweather API)  -->
+      <div class="error-404">
+        <h2>search correct 'city' name</h2>
+        <img src="error.png" alt="" />
+      </div>
+      <!-- What you want to display weather informations -->
+      <div class="display">
+        <img src="snow.png" class="weather-img" />
+        <p id="condition"></p>
+        <p id="temp"></p>
+        <p id="place"></p>
+        <div class="more-info">
+          <div class="more-info-1">
+            <p>Sunrise<img src="clear.png" /></p>
+            <p id="sunrise"></p>
+          </div>
+          <div class="cordinates">
+            <p></p>
+            <p></p>
+          </div>
+          <div class="more-info-2">
+            <p>Sunset<img src="moon.png" /></p>
+            <p id="sunset"></p>
+          </div>
+        </div>
+        <!-- Footer Section , in this section more informations like Pressure,Humidity & Wind Speed is shown -->
+        <div class="footer">
+          <div class="pressure footer-info">
+            <img src="Pressure.png" alt="" class="image" />
+            <div class="about">
+              <p>Pressure</p>
+              <p id="pressure"></p>
+            </div>
+          </div>
+          <div class="humidity footer-info">
+            <img src="humdity.png" alt="" class="image" />
+            <div class="about">
+              <p>Humidity</p>
+              <p id="humidity"></p>
+            </div>
+          </div>
+          <div class="wind footer-info">
+            <img src="wind.png" alt="" />
+            <div class="about">
+              <p>Wind Speed</p>
+              <p id="wind"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Linking the Javascript File -->
+    <script src="app.js"></script>
+  </body>
+</html>
