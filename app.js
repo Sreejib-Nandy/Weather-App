@@ -1,4 +1,4 @@
-const apiKey = "c1133cf38f916fe52abe89d8919efad4"; //Use your personal APIKEY
+const apiKey = "<YOUR API KEY>"; //Use your personal APIKEY
 const apiURL =
   "https://api.openweathermap.org/data/2.5/weather?units=metric&appid="; //Openweather API URL
 const searchCity = document.querySelector(".input");
