@@ -6,8 +6,8 @@ A simple and responsive weather application built with HTML, CSS, and JavaScript
 ## Search Page
 ![Search Page](./Screenshots/Search.png)
 ## Las Vegas Weather Page
-![Lasvegas Page](./Screenshots/Weather_1.png)
+![Lasvegas Page](./Screenshots/weather_1.png)
 ## Australia Weather Page
-![Australia Page](./Screenshots/Weather_2.png)
+![Australia Page](./Screenshots/weather_2.png)
 ## 404_Error Page
-![404_Error Page](./Screenshots/404_Error.png)
+![404_Error Page](./Screenshots/404_error.png)
